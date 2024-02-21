@@ -16,6 +16,7 @@
     "recent main main"
     "tag main main"
     "footer footer footer";
+  object-fit: cover;
 }
 .container {
   width: 80%;
