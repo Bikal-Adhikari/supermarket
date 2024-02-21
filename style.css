@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  /* gap: 10px; */
+  grid-template-areas:
+    "global-message global-message global-message"
+    "header header header"
+    "banner banner off1"
+    "banner banner off2"
+    "side-menu main main"
+    "recent main main"
+    "tag main main"
+    "footer footer footer";
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.display-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.global-message {
+  grid-area: global-message;
+  /* padding: 10px; */
+  text-align: center;
+  position: relative;
+}
+.global-message video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.global-message > div {
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+  background: rgba(0, 0, 0, 0.146);
+  color: goldenrod;
+  width: 450px;
+  padding: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  font-size: 3rem;
+}
+
+header {
+  background: green;
+  color: white;
+  grid-area: header;
+}
+
+.logo {
+  background: white;
+  color: green;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > div {
+  border: 3px dotted green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+header ul {
+  display: flex;
+
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+header ul li {
+  margin-left: 1.3rem;
+  list-style-type: none;
+}
+
+header ul li:hover {
+  color: red;
+  cursor: pointer;
+  /* font-size: 32px; */
+  transform: scale(1.5);
+  transition: all 0.5s;
+}
+
+.banner {
+  grid-area: banner;
+
+  background-image: url("./assets/banner.webp");
+  background-size: contain;
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.off1 {
+  grid-area: off1;
+  background-image: url("./assets/offer1.jpg");
+  background-size: contain;
+  min-height: 30vh;
+}
+
+.off2 {
+  grid-area: off2;
+  background-image: url("./assets/offer2.jpg");
+  background-size: contain;
+  min-height: 30vh;
+}
+
+.side-menu {
+  grid-area: side-menu;
+  background-color: #ff6347;
+  padding: 20px;
+}
+
+.side-menu h2 {
+  color: white;
+  margin-top: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin-bottom: 10px;
+}
+
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.recent {
+  grid-area: recent;
+  max-width: 100%;
+}
+
+.tag {
+  grid-area: tag;
+  max-width: 100%;
+}
+
+.main {
+  min-height: 30vh;
+  grid-area: main;
+  width: 30vw;
+  margin: auto;
+  box-shadow: 20px 20px 20px rgb(236, 6, 6);
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.product1 {
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #333; /* Dark grey */
+  color: #fff; /* White text */
+  padding: 10px;
+  text-align: center;
+}
