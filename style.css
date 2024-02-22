@@ -12,7 +12,7 @@
     "header header header"
     "banner banner off1"
     "banner banner off2"
-    "side-menu main main"
+    "side-menu side-menu side-menu"
     "recent main main"
     "tag main main"
     "footer footer footer";
@@ -178,6 +178,6 @@ footer {
   grid-area: footer;
   background-color: #333; /* Dark grey */
   color: #fff; /* White text */
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
