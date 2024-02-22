@@ -53,7 +53,7 @@
 }
 
 header {
-  background: green;
+  background: linear-gradient(green, yellow);
   color: white;
   grid-area: header;
 }
@@ -126,7 +126,7 @@ header ul li:hover {
 
 .side-menu {
   grid-area: side-menu;
-  background-color: #ff6347;
+  background: linear-gradient(Green, yellow);
   padding: 20px;
 }
 
@@ -138,10 +138,26 @@ header ul li:hover {
 .side-menu ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .side-menu ul li {
   margin-bottom: 10px;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px blue, 0 0 20px blueviolet, 0 0 30px blueviolet,
+      0 0 40px blueviolet, 0 0 50px blueviolet, 0 0 60px blueviolet,
+      0 0 70px blueviolet;
+  }
+  to {
+    text-shadow: 0 0 20px blueviolet, 0 0 30px blueviolet, 0 0 40px blueviolet,
+      0 0 50px blueviolet, 0 0 60px blueviolet, 0 0 70px blueviolet,
+      0 0 80px blueviolet;
+  }
 }
 
 .side-menu ul li a {
