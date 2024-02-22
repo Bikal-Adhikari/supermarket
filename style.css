@@ -13,7 +13,7 @@
     "banner banner off1"
     "banner banner off2"
     "side-menu side-menu side-menu"
-    "recent main main"
+    "recent recent recent"
     "tag main main"
     "footer footer footer";
   object-fit: cover;
@@ -50,6 +50,25 @@
   border-radius: 10px;
   backdrop-filter: blur(20px);
   font-size: 3rem;
+}
+.down {
+  font-size: 5rem;
+  color: greenyellow;
+  position: absolute;
+  bottom: 150px;
+  left: 49vw;
+  transform: rotate(90deg);
+  animation: arrow 2s linear infinite;
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 150px;
+    left: 50vw;
+  }
+  100% {
+    bottom: 10px;
+  }
 }
 
 header {
