@@ -213,6 +213,11 @@ header ul li:hover {
   background-size: cover;
   background-attachment: fixed;
 }
+.img3 {
+  background: url(./assets/main.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .recent > div {
   display: flex;
