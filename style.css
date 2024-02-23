@@ -114,14 +114,12 @@ header ul li {
 header ul li:hover {
   color: red;
   cursor: pointer;
-  /* font-size: 32px; */
   transform: scale(1.5);
   transition: all 0.5s;
 }
 
 .banner {
   grid-area: banner;
-
   background-image: url("./assets/banner.webp");
   background-size: contain;
   min-height: 100%;
@@ -188,6 +186,21 @@ header ul li:hover {
   grid-area: recent;
   max-width: 100%;
 }
+.title {
+  background: rgba(0, 0, 0, 0.397);
+  color: white;
+  padding-top: 1.4rem 5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+.recent > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .tag {
   grid-area: tag;
@@ -199,7 +212,6 @@ header ul li:hover {
   grid-area: main;
   width: 30vw;
   margin: auto;
-  box-shadow: 20px 20px 20px rgb(236, 6, 6);
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
@@ -211,8 +223,8 @@ header ul li:hover {
 
 footer {
   grid-area: footer;
-  background-color: #333; /* Dark grey */
-  color: #fff; /* White text */
+  background-color: #333;
+  color: #fff;
   padding: 30px;
   text-align: center;
 }
