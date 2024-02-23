@@ -14,7 +14,8 @@
     "banner banner off2"
     "side-menu side-menu side-menu"
     "recent recent recent"
-    "tag main main"
+    "tag tag tag"
+    "main main main"
     "footer footer footer";
   object-fit: cover;
 }
@@ -196,7 +197,7 @@ header ul li:hover {
 .title {
   background: rgba(0, 0, 0, 0.397);
   color: white;
-  /* padding-top: 1.4rem 5rem; */
+  padding-top: 1.4rem 5rem;
   border-radius: 10px;
   font-size: 2rem;
   text-transform: uppercase;
@@ -204,6 +205,11 @@ header ul li:hover {
 }
 .img1 {
   background: url(./assets/Recent.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img2 {
+  background: url(./assets/Tag.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
