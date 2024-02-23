@@ -186,14 +186,26 @@ header ul li:hover {
   grid-area: recent;
   max-width: 100%;
 }
+
+[class^="img"] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title {
   background: rgba(0, 0, 0, 0.397);
   color: white;
-  padding-top: 1.4rem 5rem;
+  /* padding-top: 1.4rem 5rem; */
   border-radius: 10px;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
+}
+.img1 {
+  background: url(./assets/Recent.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .recent > div {
