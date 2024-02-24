@@ -218,6 +218,11 @@ header ul li:hover {
   background-size: cover;
   background-attachment: fixed;
 }
+.img4 {
+  background: url(./assets/product2.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .recent > div {
   display: flex;
