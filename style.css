@@ -15,7 +15,8 @@
     "side-menu side-menu side-menu"
     "recent recent recent"
     "tag tag tag"
-    "main main main"
+    "product1 product1 product1"
+    "product2 product2 product2"
     "footer footer footer";
   object-fit: cover;
 }
@@ -235,7 +236,7 @@ header ul li:hover {
   max-width: 100%;
 }
 
-.main {
+/* .main {
   min-height: 30vh;
   grid-area: main;
   width: 30vw;
@@ -243,10 +244,15 @@ header ul li:hover {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-}
+} */
 
 .product1 {
   width: 100%;
+  grid-area: product1;
+}
+.product2 {
+  width: 100%;
+  grid-area: product2;
 }
 
 footer {
