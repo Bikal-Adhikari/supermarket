@@ -187,6 +187,7 @@ header ul li:hover {
 .recent {
   grid-area: recent;
   max-width: 100%;
+  padding-bottom: 20px;
 }
 
 [class^="img"] {
@@ -234,25 +235,17 @@ header ul li:hover {
 .tag {
   grid-area: tag;
   max-width: 100%;
-}
-
-/* .main {
-  min-height: 30vh;
-  grid-area: main;
-  width: 30vw;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 20px;
-} */
-
+}
 .product1 {
   width: 100%;
   grid-area: product1;
+  padding-bottom: 20px;
 }
 .product2 {
   width: 100%;
   grid-area: product2;
+  padding-bottom: 20px;
 }
 
 footer {
