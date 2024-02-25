@@ -122,7 +122,7 @@ header ul li:hover {
 
 .banner {
   grid-area: banner;
-  background-image: url("./assets/banner.webp");
+  background: url("./assets/banner.webp");
   background-size: contain;
   min-height: 100%;
   max-width: 100%;
@@ -254,4 +254,104 @@ footer {
   color: #fff;
   padding: 30px;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    display: grid;
+    /* gap: 10px; */
+    grid-template-areas:
+      "header header"
+      "global-message global-message"
+      "banner banner"
+      "banner banner"
+      "off1 off2"
+      "side-menu side-menu"
+      "recent recent"
+      "tag tag"
+      "product1 product1"
+      "product2 product2"
+      "footer footer";
+    object-fit: cover;
+  }
+
+  .global-message > div {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    background: rgba(0, 0, 0, 0.146);
+    color: goldenrod;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    font-size: 2rem;
+  }
+  .banner {
+    grid-area: banner;
+    background: url("./assets/banner.webp");
+    background-size: contain;
+    min-height: 100vh;
+    /* max-width: 100%; */
+    object-fit: cover;
+  }
+
+  .recent {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* .container {
+    width: 40%; 
+    margin: auto;
+  } */
+
+  .img1,
+  .img2,
+  .img3,
+  .img4 {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    background: rgba(0, 0, 0, 0.397);
+    color: white;
+    padding-top: 1.4rem 5rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+
+  .img1 {
+    background: url(./assets/Recent.jpg) no-repeat center;
+    background-size: 30vw;
+    width: 40vw;
+  }
+
+  .img2 {
+    background: url(./assets/Tag.jpg) no-repeat center;
+    background-size: 25vw;
+    width: 33vw;
+    background-size: cover;
+    grid-area: img2;
+  }
+
+  .tag {
+    display: grid;
+    grid-template-areas: "container img2";
+    justify-content: flex-start;
+  }
+
+  .img3 {
+    background: url(./assets/main.jpg) no-repeat center;
+    background-size: cover;
+  }
+
+  .img4 {
+    background: url(./assets/product2.jpg) no-repeat center;
+    background-size: cover;
+  }
 }
