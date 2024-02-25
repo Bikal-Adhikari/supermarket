@@ -371,3 +371,84 @@ footer {
     grid-template-areas: "container img4";
   }
 }
+
+@media (max-width: 550px) {
+  .wrapper {
+    display: grid;
+    /* gap: 10px; */
+    grid-template-areas:
+      "header"
+      "banner"
+      "off1"
+      "off2"
+      "products"
+      "lines"
+      "recent"
+      "tag"
+      "product1"
+      "product2"
+      "footer";
+    object-fit: cover;
+  }
+  .global-message {
+    display: none;
+  }
+  .side-menu {
+    display: none;
+  }
+
+  .product-section {
+    grid-area: products;
+    margin-top: 20px;
+  }
+
+  .horizontal-line {
+    grid-area: lines;
+    margin-top: 20px;
+    border-top: 2px solid black;
+  }
+  
+  .recent,
+  .tag,
+  .product1,
+  .product2 {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "image"
+      "texts"
+      "button";
+    padding: 20px;
+    border: 2px solid black;
+    margin: 0%;
+  }
+
+  [class^="img"] {
+   grid-area: image;
+   background-size: contain;
+   
+  }
+
+  .text {
+    grid-area: texts;
+  }
+
+  .read-more {
+    grid-area: button;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 551px) {
+  .product-section {
+    display: none; /* Hide on screens wider than 550px */
+  }
+
+  .horizontal-line {
+    display: none; /* Hide on screens wider than 550px */
+  }
+
+  .read-more{
+    display: none;
+  }
+}
