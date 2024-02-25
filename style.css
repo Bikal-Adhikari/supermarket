@@ -333,25 +333,41 @@ footer {
 
   .img2 {
     background: url(./assets/Tag.jpg) no-repeat center;
-    background-size: 25vw;
-    width: 33vw;
+    /* background-size: 25vw; */
+    /* width: 33vw; */
     background-size: cover;
     grid-area: img2;
   }
 
   .tag {
     display: grid;
+    gap: 10px;
     grid-template-areas: "container img2";
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
 
   .img3 {
     background: url(./assets/main.jpg) no-repeat center;
-    background-size: cover;
+    background-size: 45vw;
+    width: 40vw;
+  }
+
+  .product1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
   }
 
   .img4 {
     background: url(./assets/product2.jpg) no-repeat center;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 40vw;
+    width: 33vw;
+    grid-area: img4;
+  }
+  .product2 {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "container img4";
   }
 }
